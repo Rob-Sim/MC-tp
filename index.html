@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tphealth - dashboard</title>
+</head>
+<body>
+    <link rel="stylesheet" href="css/misc.css">
+    <link rel="stylesheet" href="css/sections/mainbody.css">
+    <link rel="stylesheet" href="css/sections/header.css">
+    <link rel="stylesheet" href="css/sections/card.css">
+    <link rel="stylesheet" href="css/sections/cardFlip.css">
+    <link rel="stylesheet" href="css/sections/ds.css">
+    <link rel="stylesheet" href="css/sections/footer.css">
+    <link rel="stylesheet" href="css/queries.css">
+    
+
+    <div class="header">
+
+        <div class="header__upper">
+            <img src="assets/imgs/header/logo-navy.svg" alt="tphealth-logo" class="header__logo">
+
+            <div class="header__upper--right">
+                <img src="assets/imgs/header/search-icon.svg" alt="" class="header__search">
+
+                <a href="#" class="header__user-btn">
+                    <p class="user-btn--name">PJ Jones</p>
+                    <img src="assets/imgs/header/user-icon.svg" alt="user-icon" class="user-btn--icon">
+                </a>
+            </div>
+        </div>
+
+        <div class="header__nav-bar">
+            <div class="header__nav-bar--half">
+                <a href="#" class="nav__item">
+                    <img src="assets/imgs/header/nav/nav-dashboard.svg" alt="dashboard icon" class="nav__item--icon">
+                    <p class="nav__item--text">My Dashboard</p>
+                </a>
+    
+                <a href="#" class="nav__item">
+                    <img src="assets/imgs/header/nav/nav-resources.svg" alt="resources icon" class="nav__item--icon">
+                    <p class="nav__item--text">Resources</p>
+                </a>
+    
+                <a href="#" class="nav__item">
+                    <img src="assets/imgs/header/nav/nav-videos.svg" alt="videos icon" class="nav__item--icon">
+                    <p class="nav__item--text">Videos</p>
+                </a>
+            </div>
+
+            <div class="header__nav-bar--half">
+                <a href="#" class="nav__item">
+                    <img src="assets/imgs/header/nav/nav-podcasts.svg" alt="podcasts icon" class="nav__item--icon">
+                    <p class="nav__item--text">Podcasts</p>
+                </a>
+    
+                <a href="#" class="nav__item">
+                    <img src="assets/imgs/header/nav/nav-downloads.svg" alt="Downloads icon" class="nav__item--icon">
+                    <p class="nav__item--text">Downloads</p>
+                </a>
+    
+                <a href="#" class="nav__item">
+                    <img src="assets/imgs/header/nav/nav-selfasess.svg" alt="Self-assessment icon" class="nav__item--icon">
+                    <p class="nav__item--text">Self-assessment</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div class="main-body__content--container main-body__content--greet">
+            <h1 class="greet__header">Hello, PJ</h1>
+            <p class="greet__para">Welcome Donec id elit non mi porta gravida at eget metus Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo.. </p>
+        </div>
+
+        <div class="main-body__content-btn">
+            <button class="main-body__btn main-body__btn--small">Physical health</button>
+            <button class="main-body__btn main-body__btn--small">Lifestyle</button>
+            <button class="main-body__btn main-body__btn--small">Mental Health</button>
+        </div>
+
+
+        <!-- Resources -->
+        <div class="main-body__content--container">
+            <h1 class="main-body__header">Resources</h1>
+
+            <div class="content__card--container">
+                <div class="content__card content__card--flip">
+                    <div class="content__card--front">
+                        <img src="assets/imgs/content/resources-1.png" alt="" class="content__card--img">
+
+                        <div class="content__card--bottom" style="background-color:#c7a3fd">
+                            <h3 class="card-subheading">Category</h3>
+                            <h1 class="card-title">Maecenas faucibus mollis interdum.</h1>
+                            <h3 class="card-subheading">4 June</h3>
+                        </div>
+                    </div>
+
+                    <div class="content__card--back" style="background-color:#c7a3fd">
+                        <h1 class="card-title">Maecenas faucibus mollis interdum.</h1>
+                        <h3 class="card-subheading">4 June</h3>
+
+                        <div class="card--back--bottom">
+                            <p class="card-details">
+                                Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+                            </p>
+
+                            <a href="#" class="card--read-on">
+                                <h3 class="card-subheading">Read on</h3>
+                                <img src="assets/imgs/arrow-right-navy.svg" alt="" class="card-read-on--icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__card content__card--flip">
+                    <div class="content__card--front">
+                        <img src="assets/imgs/content/resources-2.png" alt="" class="content__card--img">
+
+                        <div class="content__card--bottom" style="background-color:#8fd3dc">
+                            <h3 class="card-subheading">Category</h3>
+                            <h1 class="card-title">Nullam id dolor id nibh ultricies vehicula ut id elit.</h1>
+                            <h3 class="card-subheading">2 June</h3>
+                        </div>
+                    </div>
+
+                    <div class="content__card--back" style="background-color:#8fd3dc">
+                        <h1 class="card-title">Maecenas faucibus mollis interdum.</h1>
+                        <h3 class="card-subheading">4 June</h3>
+
+                        <div class="card--back--bottom">
+                            <p class="card-details">
+                                Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+                            </p>
+
+                            <a href="#" class="card--read-on">
+                                <h3 class="card-subheading">Read on</h3>
+                                <img src="assets/imgs/arrow-right-navy.svg" alt="" class="card-read-on--icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__card content__card--flip">
+                    <div class="content__card--front">
+                        <img src="assets/imgs/content/resources-1.png" alt="" class="content__card--img">
+
+                        <div class="content__card--bottom" style="background-color:#e6d8be">
+                            <h3 class="card-subheading">Category</h3>
+                            <h1 class="card-title">Nullam id dolor id nibh ultricies vehicula ut id elit.</h1>
+                            <h3 class="card-subheading">2 June</h3>
+                        </div>
+                    </div>
+
+                    <div class="content__card--back" style="background-color:#e6d8be">
+                        <h1 class="card-title">Nullam id dolor id nibh ultricies vehicula ut id elit.</h1>
+                        <h3 class="card-subheading">2 June</h3>
+
+                        <div class="card--back--bottom">
+                            <p class="card-details">
+                                Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+                            </p>
+
+                            <a href="#" class="card--read-on">
+                                <h3 class="card-subheading">Read on</h3>
+                                <img src="assets/imgs/arrow-right-navy.svg" alt="" class="card-read-on--icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="main-body__btn">View more</button>
+        </div>
+
+
+        <!-- Videos -->
+        <div class="main-body__content--container">
+            <h1 class="main-body__header">Videos</h1>
+
+            <div class="content__card--container">
+                <div class="content__card">
+                    <img src="assets/imgs/content/videos-1.png" alt="" class="content__card--img content__card--img-videos">
+
+                    <img src="assets/imgs/video-icon.svg" alt="" class="content__card--icon">
+                    <div class="content__card--bottom content__card--bottom--videos">
+                        <h3 class="card-subheading">Category</h3>
+                        <h1 class="card-title">Video title</h1>
+                        <h3 class="card-subheading">Subtitle</h3>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <img src="assets/imgs/content/videos-2.png" alt="" class="content__card--img content__card--img-videos">
+
+                    <img src="assets/imgs/video-icon.svg" alt="" class="content__card--icon">
+
+                    <div class="content__card--bottom content__card--bottom--videos">
+                        <h3 class="card-subheading">Category</h3>
+                        <h1 class="card-title">Video title</h1>
+                        <h3 class="card-subheading">Subtitle</h3>
+                    </div>
+                </div>
+
+                <div class="content__card">
+                    <img src="assets/imgs/content/videos-3.png" alt="" class="content__card--img content__card--img-videos">
+
+                    <img src="assets/imgs/video-icon.svg" alt="" class="content__card--icon">
+
+                    <div class="content__card--bottom content__card--bottom--videos">
+                        <h3 class="card-subheading">Category</h3>
+                        <h1 class="card-title">Video title</h1>
+                        <h3 class="card-subheading">Subtitle</h3>
+                    </div>
+                </div>
+            </div>
+
+            <button class="main-body__btn">View more</button>
+        </div>
+
+        <!-- Podcasts -->
+        <div class="main-body__content--container main-body__content--container--podcasts">
+            <h1 class="main-body__header">Podcasts</h1>
+
+            <div class="content__card--container">
+                <div class="content__card content__card--podcast">
+                    <img src="assets/imgs/content/podcasts-1.png" alt="" class="content__card--img content__card--img-videos">
+
+                    <img src="assets/imgs/podcast-icon.svg" alt="" class="content__card--icon content__card--icon--podcast">
+
+                    <div class="content__card--bottom">
+                        <h3 class="card-subheading">Category</h3>
+                        <h1 class="card-title">Featured podcast title</h1>
+                        <h3 class="card-subheading">Subtitle</h3>
+                    </div>
+                </div>
+
+                <div class="content__card content__card--podcast">
+                    <img src="assets/imgs/content/podcasts-2.png" alt="" class="content__card--img content__card--img-videos">
+
+                    <img src="assets/imgs/podcast-icon.svg" alt="" class="content__card--icon content__card--icon--podcast">
+
+                    <div class="content__card--bottom">
+                        <h3 class="card-subheading">Category</h3>
+                        <h1 class="card-title">Featured podcast title</h1>
+                        <h3 class="card-subheading">Subtitle</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="main-body__btn">View more</button>
+        </div>
+
+        <div class="main-body__content--container--ds">
+            <div class="main-body__content--container main-body__content--container-small">
+                <h1 class="main-body__header">Downloads</h1>
+
+                <div class="ds__tile">
+                    <h2 class="ds__tile--title">Download title</h2>
+
+                    <div class="ds__tile--right">
+                        <h3 class="ds__tile--info">Type</h3>
+                        <h3 class="ds__tile--info">Size</h3>
+    
+                        <img src="assets/imgs/arrow-down-green.svg" alt="" class="ds__tile--icon">
+                    </div>
+                </div>
+
+                <div class="ds__tile">
+                    <h2 class="ds__tile--title">Download title</h2>
+
+                    <div class="ds__tile--right">
+                        <h3 class="ds__tile--info">Type</h3>
+                        <h3 class="ds__tile--info">Size</h3>
+    
+                        <img src="assets/imgs/arrow-down-green.svg" alt="" class="ds__tile--icon">
+                    </div>
+                </div>
+
+                <div class="ds__tile">
+                    <h2 class="ds__tile--title">Download title</h2>
+
+                    <div class="ds__tile--right">
+                        <h3 class="ds__tile--info">Type</h3>
+                        <h3 class="ds__tile--info">Size</h3>
+    
+                        <img src="assets/imgs/arrow-down-green.svg" alt="" class="ds__tile--icon">
+                    </div>
+                </div>
+
+                <button class="main-body__btn">View more</button>
+            </div>
+    
+            <div class="main-body__content--container main-body__content--container-small">
+                <h1 class="main-body__header">Self-assessment</h1>
+
+                <div class="ds__tile">
+                    <div class="ds__tile--left">
+                        <div class="ds__tile--img"></div>
+                    <h2 class="ds__tile--title">Title</h2>
+                    </div>
+
+                    <div class="ds__tile--right ds__tile--right--assess">
+                        <h3 class="ds__tile--info">10min</h3>
+    
+                        <img src="assets/imgs/arrow-right-green.svg" alt="" class="ds__tile--icon">
+                    </div>
+                </div>
+
+                <div class="ds__tile">
+                    <div class="ds__tile--left">
+                        <div class="ds__tile--img"></div>
+                    <h2 class="ds__tile--title">Title</h2>
+                    </div>
+
+                    <div class="ds__tile--right ds__tile--right--assess">
+                        <h3 class="ds__tile--info">10min</h3>
+    
+                        <img src="assets/imgs/arrow-right-green.svg" alt="" class="ds__tile--icon">
+                    </div>
+                </div>
+
+                <button class="main-body__btn">View more</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer__nav">
+            <h2 class="footer__nav--item">Dashboard</h2>
+            <h2 class="footer__nav--item">Resources</h2>
+            <h2 class="footer__nav--item">Videos</h2>
+            <h2 class="footer__nav--item">Podcasts</h2>
+            <h2 class="footer__nav--item">Self assessment</h2>
+            <h2 class="footer__nav--item">Help</h2>
+            <h2 class="footer__nav--item">TPH website</h2>
+        </div>
+
+        <div class="footer__bottom">
+            <img src="assets/imgs/footer/logo-white.svg" alt="tphealth logo">
+
+            <div class="footer__companies">
+                <img src="assets/imgs/footer/planet-logo-1@2x.png" alt="" class="companies--item">
+                <img src="assets/imgs/footer/investors-in-people-logo-1@2x.png" alt="" class="companies--item">
+                <img src="assets/imgs/footer/hse-accred-1@2x.png" alt="" class="companies--item">
+                <img src="assets/imgs/footer/iso-9001-1@2x.png" alt="" class="companies--item">
+            </div>
+
+            <div class="footer__socials">
+                <p class="footer__email">info@tphealth.co.uk</p>
+
+                <img src="assets/imgs/footer/instagram.svg" alt="" class="socials--item">
+                <img src="assets/imgs/footer/twitter.svg" alt="" class="socials--item">
+                <img src="assets/imgs/footer/facebook.svg" alt="" class="socials--item">
+                <img src="assets/imgs/footer/linkedin.svg" alt="" class="socials--item">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+.main-body{
+    width: 114.8rem;
+    height: fit-content;
+
+    margin-top: 14rem;
+}
+.main-body__header{
+    color: var(--colour-navy);
+    font-size: 3.2rem;
+    font-family: 'CeraPro-bold';
+    text-align: left;
+    margin-bottom: var(--spacer-small);
+}
+.main-body__content--container{
+    margin-bottom: var(--spacer-small);
+    border-bottom: var(--line);
+}
+
+.main-body__content--container--podcasts{
+    border-bottom: none;
+    margin-bottom: unset;
+}
+
+.main-body__btn{
+    padding: 1.6rem;
+    background-color: var(--colour-white);
+    border: 2px solid var(--colour-navy);
+    border-radius: 6.3rem;
+
+    color: var(--colour-navy);
+    font-size: 1.4rem;
+    font-family: 'CeraPro-bold';
+
+    margin-bottom: var(--spacer-large);
+    cursor: pointer;
+    transition: all .2s;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.main-body__btn::after{
+    background-color: var(--colour-green);
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .3s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.main-body__btn:hover::after{
+    transform: translate(0, 0);
+}
+
+.main-body__btn:hover{
+    border: 2px solid transparent;
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+.main-body__btn--small{
+    border: solid 2px var(--colour-navy);
+
+    padding: .7rem 1.5rem;
+    margin-right: 2rem;
+    margin-bottom: 0;
+}
+
+/* Greet section */
+.greet__header{
+    color: var(--colour-navy);
+    font-size: 7rem;
+    line-height: 1.14;
+    margin-bottom: var(--spacer-small);
+}
+
+.greet__para{
+    width: 50%;
+    color: var(--colour-navy);
+    font-size: 2.2rem;
+    font-family: 'CeraPro-light';
+    line-height: 1.18;
+    margin-bottom: var(--spacer-small);
+}
+
+.main-body__content-btn{
+    width: auto;
+    height: auto;
+
+    margin-bottom: var(--spacer-small);
+}

@@ -1,0 +1,72 @@
+/* Downloads / Self-assessment */
+
+.main-body__content--container--ds{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-body__content--container-small{
+    width: 55.4rem;
+    height: 34rem;
+    float: left;
+    padding-top: var(--spacer-small);
+    border-top: var(--line);
+    border-bottom: unset;
+}
+
+.ds__tile{
+    border-bottom: var(--line);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    color: var(--colour-navy);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ds__tile:last-of-type{
+    border-bottom: unset;
+}
+.ds__tile--left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.ds__tile--img{
+    width: 9.1rem;
+    height: 5.8rem;
+    border-radius: .4rem;
+    background-color: rgba(7,65,89,.24);
+    margin-right: 3rem;
+}
+.ds__tile--title{
+    font-size: 2.2rem;
+    font-family: 'CeraPro-bold';
+    line-height: 1.27;
+}
+.ds__tile--right{
+    margin-right: .4rem;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ds__tile--right--assess{
+    width: 19%;
+}
+
+.ds__tile--info{
+    font-family: 'CeraPro-light';
+    line-height: 1.11;
+    font-size: 1.8rem;
+}
+
+.ds__tile--icon{
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.ds__tile--icon:hover{
+    transform: scale(1.09);
+}
