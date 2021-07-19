@@ -1,5 +1,8 @@
 /* 1220px */
 @media (max-width: 75.8em) {
+    .nav__item{
+        margin: 0 1.6rem -.05rem 1.6rem;
+    }
     .main-body{
         width: 95vw;
     }
@@ -32,7 +35,11 @@
         justify-content: center !important;
     }
     .nav__item{
-        padding-bottom: .5rem;
+        padding-bottom: .8rem;
+        margin: 0 3rem -.05rem 3rem;
+    }
+    .nav__item:hover{
+        border-bottom: 2px solid var(--colour-green);
     }
     .main-body__content--greet{
         display: flex;
@@ -93,8 +100,32 @@
 
 /* 753px */
 @media (max-width: 47em) {
+    .header__upper--right{
+        width: 16rem;
+    }
+    .header__nav-bar{
+        flex-direction: row;
+        height: 5rem;
+    }
+    .header__nav-bar--half{
+        justify-content: space-evenly !important;
+    }
+
+    .nav__item{
+        padding: 0 .5rem;
+        margin: 0 .5rem;
+    }
+    .nav__item--text{
+        display: none;
+    }
+    .nav__item--icon{
+        min-height: 3.7vw;
+        margin-right: 0;
+    }
+
     .main-body{
         width: 95%;
+        margin-top: 11rem;
     }
     .main-body__header{
         text-align: center;
@@ -120,8 +151,11 @@
         height: 9rem;
         margin-bottom: -1vw;
     }
+    .content__card--icon--podcast{
+        top: 30%;
+    }
     .main-body__content--container--podcasts > .main-body__btn{
-        margin-top: 0;
+        margin-top: 4rem;
     }
     .content__card--container{
         justify-content: space-evenly;
@@ -148,49 +182,14 @@
         margin-left: 0;
         margin-top: 0 !important;
     }
-    .footer__nav--item{
-        padding: .3rem 1.2rem;
-    }
-}
-
-/* 550px */
-@media (max-width: 47em) {
-    .header__upper--right{
-        width: 16rem;
-    }
-    .header__nav-bar{
-        flex-direction: row;
-        height: 5rem;
-    }
-    .header__nav-bar--half:first-of-type{
-        justify-content: space-evenly !important;
-    }
-    .header__nav-bar--half:last-of-type{
-        justify-content: space-evenly !important;
-    }
-    .content__card--icon--podcast{
-        top: 30%;
-    }
-    .main-body__content--container--podcasts > .main-body__btn{
-        margin-top: 4rem;
-    }
-    .nav__item{
-        margin: 0 .5rem;
-    }
-    .nav__item--text{
-        display: none;
-    }
-    .nav__item--icon{
-        min-height: 3.7vw;
-    }
-    .main-body{
-        margin-top: 11rem;
-    }
     .footer__bottom{
         width: 95%;
     }
     .footer__nav{
         column-count: 2;
+    }
+    .footer__nav--item{
+        padding: .3rem 1.2rem;
     }
 }
 

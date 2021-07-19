@@ -33,41 +33,19 @@
 
     margin-bottom: var(--spacer-large);
     cursor: pointer;
-    transition: all .2s;
+    transition: all .3s ease-in-out;
 
     position: relative;
     overflow: hidden;
 }
 
-.main-body__btn::after{
-    background-color: var(--colour-green);
-    border-radius: 3rem;
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translate(-100%, 0) rotate(10deg);
-    transform-origin: top left;
-    transition: .3s transform ease-out;
-    will-change: transform;
-    z-index: -1;
-}
-
-.main-body__btn:hover::after{
-    transform: translate(0, 0);
-}
-
 .main-body__btn:hover{
-    border: 2px solid transparent;
-    transform: scale(1.05);
-    will-change: transform;
+    background-color: var(--colour-grey);
 }
 
 .main-body__btn--small{
-    border: solid 2px var(--colour-navy);
+    border: solid 1px var(--colour-navy);
+    font-family: 'CeraPro-normal';
 
     padding: .7rem 1.5rem;
     margin-right: 2rem;

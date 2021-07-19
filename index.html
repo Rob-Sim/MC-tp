@@ -23,7 +23,10 @@
             <img src="assets/imgs/header/logo-navy.svg" alt="tphealth-logo" class="header__logo">
 
             <div class="header__upper--right">
-                <img src="assets/imgs/header/search-icon.svg" alt="" class="header__search">
+                <svg class="header__search" xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none" viewBox="0 0 16 17">
+                    <path fill="#074159" d="M11.435 10.507h-.723l-.256-.247c.897-1.043 1.437-2.397 1.437-3.87 0-3.284-2.663-5.946-5.947-5.946C2.662.444 0 3.106 0 6.391c0 3.284 2.662 5.946 5.946 5.946 1.473 0 2.827-.54 3.87-1.436l.247.256v.722l4.574 4.565L16 15.081l-4.565-4.574zm-5.489 0c-2.278 0-4.116-1.839-4.116-4.116 0-2.278 1.838-4.117 4.116-4.117 2.278 0 4.117 1.839 4.117 4.117 0 2.277-1.839 4.116-4.117 4.116z"/>
+                </svg>
+                
 
                 <a href="#" class="header__user-btn">
                     <p class="user-btn--name">PJ Jones</p>
@@ -32,9 +35,10 @@
             </div>
         </div>
 
-        <div class="header__nav-bar">
+        <div class="header__nav-bar" id="nav-bar">
+            <div id="header__nav-bar--underline"></div>
             <div class="header__nav-bar--half">
-                <a href="#" class="nav__item">
+                <a href="#" class="nav__item" id="active">
                     <img src="assets/imgs/header/nav/nav-dashboard.svg" alt="dashboard icon" class="nav__item--icon">
                     <p class="nav__item--text">My Dashboard</p>
                 </a>
@@ -263,7 +267,9 @@
                         <h3 class="ds__tile--info">Type</h3>
                         <h3 class="ds__tile--info">Size</h3>
     
-                        <img src="assets/imgs/arrow-down-green.svg" alt="" class="ds__tile--icon">
+                        <svg class="ds__tile--icon" xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21">
+                            <path fill="#3BEB73" d="M20 10.568l-1.762-1.763-6.988 6.975V.568h-2.5V15.78L1.763 8.805 0 10.568l10 10 10-10z"/>
+                        </svg>
                     </div>
                 </div>
 
@@ -274,7 +280,9 @@
                         <h3 class="ds__tile--info">Type</h3>
                         <h3 class="ds__tile--info">Size</h3>
     
-                        <img src="assets/imgs/arrow-down-green.svg" alt="" class="ds__tile--icon">
+                        <svg class="ds__tile--icon" xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21">
+                            <path fill="#3BEB73" d="M20 10.568l-1.762-1.763-6.988 6.975V.568h-2.5V15.78L1.763 8.805 0 10.568l10 10 10-10z"/>
+                        </svg>
                     </div>
                 </div>
 
@@ -285,7 +293,9 @@
                         <h3 class="ds__tile--info">Type</h3>
                         <h3 class="ds__tile--info">Size</h3>
     
-                        <img src="assets/imgs/arrow-down-green.svg" alt="" class="ds__tile--icon">
+                        <svg class="ds__tile--icon" xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21">
+                            <path fill="#3BEB73" d="M20 10.568l-1.762-1.763-6.988 6.975V.568h-2.5V15.78L1.763 8.805 0 10.568l10 10 10-10z"/>
+                        </svg>
                     </div>
                 </div>
 
@@ -304,7 +314,10 @@
                     <div class="ds__tile--right ds__tile--right--assess">
                         <h3 class="ds__tile--info">10min</h3>
     
-                        <img src="assets/imgs/arrow-right-green.svg" alt="" class="ds__tile--icon">
+                        <svg class="ds__tile--icon" xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21">
+                            <path fill="#3BEB73" d="M10 .568L8.238 2.33l6.975 6.988H0v2.5h15.213l-6.975 6.987L10 20.568l10-10-10-10z"/>
+                        </svg>
+
                     </div>
                 </div>
 
@@ -317,7 +330,10 @@
                     <div class="ds__tile--right ds__tile--right--assess">
                         <h3 class="ds__tile--info">10min</h3>
     
-                        <img src="assets/imgs/arrow-right-green.svg" alt="" class="ds__tile--icon">
+                        <svg class="ds__tile--icon" xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21">
+                            <path fill="#3BEB73" d="M10 .568L8.238 2.33l6.975 6.988H0v2.5h15.213l-6.975 6.987L10 20.568l10-10-10-10z"/>
+                        </svg>
+
                     </div>
                 </div>
 
@@ -349,12 +365,30 @@
             </div>
 
             <div class="footer__socials">
-                <p class="footer__email">info@tphealth.co.uk</p>
+                <a href="mailto:info@tphealth.co.uk" class="footer__email">info@tphealth.co.uk</a>
 
-                <img src="assets/imgs/footer/instagram.svg" alt="" class="socials--item">
+                <!-- <img src="assets/imgs/footer/instagram.svg" alt="" class="socials--item">
                 <img src="assets/imgs/footer/twitter.svg" alt="" class="socials--item">
                 <img src="assets/imgs/footer/facebook.svg" alt="" class="socials--item">
-                <img src="assets/imgs/footer/linkedin.svg" alt="" class="socials--item">
+                <img src="assets/imgs/footer/linkedin.svg" alt="" class="socials--item"> -->
+
+                <svg class="socials--item" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <path fill="#fff" d="M7.998 5.332C6.528 5.332 5.33 6.531 5.33 8s1.199 2.668 2.668 2.668S10.666 9.469 10.666 8s-1.2-2.668-2.668-2.668zM15.999 8c0-1.105.01-2.2-.052-3.302-.062-1.281-.354-2.418-1.29-3.355-.94-.938-2.074-1.228-3.355-1.29C10.197-.01 9.102 0 8 0 6.895 0 5.8-.01 4.698.053 3.417.115 2.28.407 1.343 1.343.405 2.284.115 3.417.053 4.699-.01 5.803 0 6.898 0 8c0 1.103-.01 2.2.052 3.302.062 1.281.354 2.418 1.29 3.354.94.94 2.074 1.23 3.355 1.291C5.802 16.01 6.898 16 8 16c1.105 0 2.2.01 3.302-.052 1.28-.062 2.418-.354 3.354-1.29.939-.94 1.229-2.074 1.291-3.355C16.011 10.2 16 9.105 16 8zm-8.001 4.105c-2.272 0-4.105-1.834-4.105-4.105 0-2.272 1.833-4.105 4.105-4.105 2.271 0 4.104 1.833 4.104 4.105 0 2.271-1.833 4.105-4.104 4.105zm4.273-7.42c-.53 0-.959-.428-.959-.958s.428-.959.959-.959c.53 0 .958.429.958.96 0 .125-.024.25-.072.366-.049.117-.12.222-.208.311-.09.09-.195.16-.311.208-.117.048-.241.073-.367.073z"/>
+                </svg>
+                
+                <svg class="socials--item" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14">
+                    <path fill="#fff" d="M16 1.565c-.6.27-1.235.447-1.885.525.685-.417 1.198-1.073 1.443-1.846-.644.389-1.35.663-2.084.81-.308-.333-.679-.599-1.09-.78C11.97.093 11.526 0 11.077 0 9.265 0 7.795 1.494 7.795 3.337c0 .261.03.516.085.76C5.152 3.958 2.733 2.63 1.114.611.822 1.12.67 1.699.67 2.288c0 .55.133 1.09.387 1.575.255.485.624.898 1.073 1.203-.521-.017-1.03-.16-1.486-.418v.042c0 1.617 1.13 2.965 2.632 3.272-.484.133-.99.153-1.482.057.417 1.326 1.63 2.29 3.066 2.318-1.163.927-2.599 1.43-4.077 1.428-.265 0-.526-.015-.783-.046 1.5.98 3.248 1.5 5.032 1.498 6.037 0 9.34-5.084 9.34-9.493 0-.144-.004-.289-.01-.432.643-.472 1.197-1.057 1.638-1.727z"/>
+                </svg>
+
+                <svg class="socials--item" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <path fill="#fff" d="M15.117 0H.883C.65 0 .424.093.26.259.093.424 0 .649 0 .883v14.234c0 .234.093.459.259.624.165.166.39.259.624.259h7.663V9.804H6.461V7.389h2.085V5.61c0-2.067 1.262-3.192 3.106-3.192.883 0 1.642.065 1.863.095v2.16h-1.279c-1.002 0-1.196.477-1.196 1.176V7.39h2.39l-.31 2.414h-2.08V16h4.077c.234 0 .459-.093.624-.259.166-.165.259-.39.259-.624V.883c0-.234-.093-.459-.259-.624-.165-.166-.39-.259-.624-.259z"/>
+                </svg>
+
+                <svg class="socials--item" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <path fill="#fff" fill-rule="evenodd" d="M0 1.337C0 .982.14.642.392.392.642.14.982 0 1.337 0h13.325c.175 0 .35.034.512.101.162.067.31.166.434.29.124.124.223.271.29.434.068.162.102.336.102.512v13.325c0 .175-.034.35-.101.512-.067.162-.166.31-.29.434-.124.124-.272.223-.434.29-.163.068-.337.102-.513.102H1.338c-.176 0-.35-.035-.512-.102-.162-.067-.31-.166-.434-.29-.124-.124-.222-.271-.29-.434-.067-.162-.101-.336-.101-.511V1.336zM6.333 6.1H8.5v1.088C8.812 6.563 9.612 6 10.815 6c2.304 0 2.85 1.246 2.85 3.532v4.234h-2.332v-3.714c0-1.301-.313-2.036-1.107-2.036-1.102 0-1.56.792-1.56 2.036v3.714H6.333V6.1zm-4 7.566h2.333V6H2.333v7.666zM5 3.5c.004.2-.031.398-.105.584-.073.186-.183.355-.322.498-.14.143-.307.256-.491.334-.184.077-.382.117-.582.117-.2 0-.398-.04-.582-.117-.184-.078-.35-.191-.49-.334-.14-.143-.25-.312-.323-.498-.074-.186-.11-.385-.105-.584.009-.392.17-.766.45-1.04.281-.274.658-.428 1.05-.428s.769.154 1.05.428c.28.274.441.648.45 1.04z" clip-rule="evenodd"/>
+                </svg>
+                
+                
             </div>
         </div>
     </div>

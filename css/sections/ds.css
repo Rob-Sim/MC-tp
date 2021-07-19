@@ -24,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 .ds__tile:last-of-type{
     border-bottom: unset;
@@ -63,10 +64,11 @@
 }
 
 .ds__tile--icon{
-    cursor: pointer;
     transition: all .2s;
 }
-
-.ds__tile--icon:hover{
-    transform: scale(1.09);
+.ds__tile--icon > path{
+    transition: all .3s;
+}
+.ds__tile:hover > .ds__tile--right > .ds__tile--icon > path{
+    fill: var(--colour-navy);
 }
