@@ -8,40 +8,23 @@
 .content__card--front, .content__card--back{
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
-    transition: transform 1s;
+    transition: transform .3s;
 
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
 }
 
-@media (hover: hover) {
-    .content__card--flip:hover > .content__card--back {
-        transform: rotateY(0);
-    }
-    .content__card--flip:hover > .content__card--front {
-        transform: rotateY(-180deg);
-    }
-}
-@media (hover: none) {
-    .flipBack {
-        transform: rotateY(0) !important;
-    }
-    .flipFront {
-        transform: rotateY(-180deg) !important;
-    }
-}
-
-.flipBack > .card--back--bottom{
-    opacity: 1 !important;
-}
-
 .content__card--back{
-    transform: rotateY(180deg);
+    border-radius: 0;
+    transform: translateY(70%);
 }
+.content__card--flip:hover > .content__card--front > .content__card--back{
+    transform: translateY(0);
+}
+
 .content__card--back > *{
     padding: 1.4rem;
 }
@@ -68,6 +51,12 @@
     color: var(--colour-navy);
     font-size: 1.4rem;
     line-height: 1.29;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+.content__card--flip:hover > .content__card--front > .content__card--back > .card--back--bottom > .card-details{
+    transition-delay: .3s;
+    opacity: 1;
 }
 .card--read-on{
     cursor: pointer;
