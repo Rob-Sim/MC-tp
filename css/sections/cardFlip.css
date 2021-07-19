@@ -25,16 +25,8 @@
     transform: translateY(0);
 }
 
-.content__card--back > *{
-    padding: 1.4rem;
-}
 .content__card--back > .card-title{
-    padding-bottom: .4rem;
     line-height: 1.18;
-}
-
-.content__card--back > .card-subheading{
-    padding-top: 0 !important;
 }
 
 .card--back--bottom{
@@ -46,6 +38,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    padding: 1.4rem;
 }
 .card-details{
     color: var(--colour-navy);
@@ -69,6 +63,6 @@
     transform: translateX(3px);
 }
 .card--read-on > .card-subheading{
-    padding: 0 !important;
-    margin-right: 1rem;
+    padding-top: 0 !important;
+    padding-left: 0rem;
 }

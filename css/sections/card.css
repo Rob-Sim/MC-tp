@@ -57,10 +57,10 @@
     font-family: 'CeraPro-light';
 }
 .card-subheading:nth-of-type(1){
-    padding-top: 15px;
+    padding-top: 1.5rem;
 }
 .card-subheading:nth-of-type(2){
-    padding-bottom: 15px;
+    padding-bottom: 1.5rem;
 }
 .card-title{
     color: var(--colour-navy);
