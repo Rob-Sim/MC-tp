@@ -13,6 +13,12 @@
     .content__card--flip{
         height: 35vw;
     }
+    .card-title{
+        font-size: 1.9rem;
+    }
+    .card--back--bottom{
+        height: 40%;
+    }
     .content__card--podcast{
         width: 48%;
         height: auto;
@@ -52,18 +58,18 @@
         width: 75%;
     }
     .card-title{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     .card-subheading{
         font-size: 1.4rem;
+    }
+    .card-details{
+        font-size: 1.2rem;
     }
     .content__card--flip:hover > .content__card--back .card--back--bottom{
         opacity: 1;
     }
     .card--back--bottom{
-        opacity: 0;
-        transition: all .3s;
-        height: 50%;
         overflow: scroll;
     }
     .card--back--bottom::-webkit-scrollbar{
@@ -74,6 +80,9 @@
     }
     .main-body__content--container-small{
         width: 90%;
+    }
+    .main-body__btn{
+        margin-top: 1rem;
     }
     .footer{
         align-items: flex-start;
@@ -132,20 +141,16 @@
     }
     .main-body__btn{
         margin-left: 2rem;
-        margin-top: 8rem;
+        margin-top: .5rem;
+
+        font-size: 1.2rem;
+        padding: 1.4rem;
     }
     .main-body__btn--small{
         margin: .5rem;
     }
-    .content__card--back{
-        height: 46vw;
-    }
-    .content__card--bottom{
-        margin-bottom: -11vw;
-        height: 11rem;
-    }
     .content__card--bottom--videos{
-        height: 9rem;
+        height: 12rem;
     }
     .content__card--podcast > .content__card--bottom{
         height: 9rem;
@@ -168,12 +173,29 @@
     }
     .content__card{
         width: 45%;
+        height: 38vw;
+    }
+    .content__card--flip{
+        height: 30rem;
+    }
+    .content__card--back{
+        transform: translateY(65%);
+    }
+    .content__card--bottom{
+        margin-bottom: 0vw;
+        height: 8rem;
     }
     .card-title{
         font-size: 1.5rem;
     }
     .card-subheading{
         font-size: 1.3rem;
+    }
+    .card-subheading:nth-of-type(1){
+        padding-top: 10px;
+    }
+    .card-subheading:nth-of-type(2){
+        padding-bottom: 10px;
     }
     .card-details{
         font-size: 1.2rem;
@@ -224,37 +246,28 @@
     .greet__para{
         font-size: 1.8rem;
     }
+    .content__card{
+        height: 50vw;
+    }
     .content__card--icon{
         width: 4rem;
     }
     .content__card--bottom{
-        margin-bottom: -12rem;
-        height: 13rem;
-    }
-    .content__card--bottom--videos{
-        margin-bottom: -8rem;
-        height: 10rem;
+        height: 21vw;
     }
     .content__card--back{
-        height: 100%;
-        padding-bottom: 12rem;
+        transform: translateY(60%);
     }
     .card-title{
-        font-size: 1.2rem;
+        font-size: 3.5vw;
     }
     .card-details{
-        font-size: 1rem;
+        font-size: 3vw;
     }
-    .content__card--podcast > .content__card--bottom{
-        height: 10rem;
-        margin-bottom: -1rem;
+    .card-subheading{
+        font-size: 3.4vw;
     }
-    .main-body__content--container--podcasts > .main-body__btn{
-        margin-top: 4rem;
-    }
-    .main-body__btn{
-        margin-top: 12rem;
-    }
+
     .main-body__btn--small{
         margin-top: .5rem;
     }
